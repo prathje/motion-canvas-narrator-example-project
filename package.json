@@ -1,0 +1,24 @@
+{
+  "name": "my-animation",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "vite",
+    "serve": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "@lezer/javascript": "^1.5.3",
+    "@motion-canvas/2d": "3.18.0-alpha.0",
+    "@motion-canvas/core": "3.18.0-alpha.0",
+    "@motion-canvas/ffmpeg": "3.18.0-alpha.0",
+    "motion-canvas": "github:prathje/motion-canvas#fix/ffmpeg_chainpromises",
+    "motion-canvas-narrator": "file:../motion-canvas-narrator"
+  },
+  "devDependencies": {
+    "@motion-canvas/ui": "3.18.0-alpha.0",
+    "@motion-canvas/vite-plugin": "3.18.0-alpha.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.0.0"
+  }
+}
