@@ -3,8 +3,8 @@
  */
 
 import {Circle, Txt, makeScene2D, Rect, Code, LezerHighlighter, lines} from '@motion-canvas/2d';
-import {createRef, all, waitFor, sequence} from '@motion-canvas/core';
-import {createElevenLabsNarrator, createMockNarrator} from 'motion-canvas-narrator';
+import {createRef, all, waitFor} from '@motion-canvas/core';
+import {createElevenLabsNarrator} from 'motion-canvas-narrator';
 import {parser} from '@lezer/javascript';
 
 const TsHighlighter = new LezerHighlighter(parser);
