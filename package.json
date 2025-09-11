@@ -13,7 +13,8 @@
     "@motion-canvas/core": "3.18.0-alpha.0",
     "@motion-canvas/ffmpeg": "3.18.0-alpha.0",
     "motion-canvas": "github:prathje/motion-canvas#fix/ffmpeg_chainpromises",
-    "motion-canvas-narrator": "file:../motion-canvas-narrator"
+    "motion-canvas-narrator": "file:../motion-canvas-narrator",
+    "@elevenlabs/elevenlabs-js": "^2.7.0"
   },
   "devDependencies": {
     "@motion-canvas/ui": "3.18.0-alpha.0",
