@@ -1,6 +1,6 @@
 # Motion Canvas Narrator Example Project
 
-This is an example project demonstrating the use of the `motion-canvas-narrator` package with Motion Canvas.
+This is an example project demonstrating the use of the `motion-canvas-narrator` package with Motion Canvas which is available [here](https://github.com/prathje/motion-canvas-narrator).  
 You should be able to use it right out of the box. However, if you will need to add your own ElevenLabs API key to `src/scenes/example.tsx`.
 
 ## Demo Video (Make sure to enable audio!)
