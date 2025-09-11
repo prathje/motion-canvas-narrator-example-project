@@ -8,13 +8,13 @@
     "build": "tsc && vite build"
   },
   "dependencies": {
+    "@elevenlabs/elevenlabs-js": "^2.7.0",
     "@lezer/javascript": "^1.5.3",
     "@motion-canvas/2d": "3.18.0-alpha.0",
     "@motion-canvas/core": "3.18.0-alpha.0",
     "@motion-canvas/ffmpeg": "3.18.0-alpha.0",
     "motion-canvas": "github:prathje/motion-canvas#fix/ffmpeg_chainpromises",
-    "motion-canvas-narrator": "file:../motion-canvas-narrator",
-    "@elevenlabs/elevenlabs-js": "^2.7.0"
+    "motion-canvas-narrator": "github:prathje/motion-canvas-narrator"
   },
   "devDependencies": {
     "@motion-canvas/ui": "3.18.0-alpha.0",
