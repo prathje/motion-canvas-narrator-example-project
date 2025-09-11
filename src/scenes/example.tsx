@@ -1,15 +1,5 @@
 /**
- * Motion Canvas Narrator Example
- * Demonstrates the code-first approach to syncing animations with voice-over
- * 
- * Setup Options:
- * 1. ElevenLabs: Set ELEVENLABS_API_KEY and replace voice ID
- * 2. Mock Narrator: Use the commented mock narrator for testing without API
- * 
- * Key Concepts Demonstrated:
- * - Code-first narrations: Define animations and narration together in code
- * - No manual sync: Let the narrator control timing automatically
- * - Flexible patterns: Voice before, after, or with animations
+ * Motion Canvas Narrator Example Scene
  */
 
 import {Circle, Txt, makeScene2D, Rect, Code, LezerHighlighter, lines} from '@motion-canvas/2d';
@@ -17,21 +7,12 @@ import {createRef, all, waitFor, sequence} from '@motion-canvas/core';
 import {createElevenLabsNarrator, createMockNarrator} from 'motion-canvas-narrator';
 import {parser} from '@lezer/javascript';
 
-// motion canvas colors
-const YELLOW = '#FFC66D';
-const RED = '#FF6470';
-const GREEN = '#2e8555';
-const BLUE = '#68ABDF';
-const WHITE = '#ffffff';
-const GRAY = '#bbbbbb';
-const BLACK = '#000000';
-
 const TsHighlighter = new LezerHighlighter(parser);
 
 export default makeScene2D(function* (view) {
   // Choose your narrator: ElevenLabs for production, Mock for development
 
-  view.fill(WHITE);
+  view.fill('#ffffff');
 
   // Create visual elements
   const title = createRef<Txt>();
@@ -59,7 +40,7 @@ export default makeScene2D(function* (view) {
         ref={title}
         fontSize={55}
         fontWeight={500}
-        fill={BLACK}
+        fill={'#000000'}
         y={0}
         text={"Narrations in Code with Motion Canvas Narrator"}
       />
@@ -113,7 +94,7 @@ yield* narrator.speak("Start creating your next animated explanation today!");
       </Rect>
 
       <Rect
-        fill={BLACK}
+        fill={'#000000'}
         ref={subtitleBox}
         layout
         direction={'column'}
